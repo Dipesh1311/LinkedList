@@ -60,6 +60,12 @@ public class LinkedList<K> {
         }
         return searchedNode;
     }
+    public void insertAfter(K insertData, K searchData) {
+        Node<K> newNode = new Node<>(insertData);
+        Node<K> searchedNode = search(searchData);
+        newNode.next = searchedNode.next;
+        searchedNode.next = newNode;
+    }
     public void print() {
         Node<K> temp = head;
         while(temp != null){

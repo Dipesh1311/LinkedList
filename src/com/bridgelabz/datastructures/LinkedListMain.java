@@ -35,6 +35,11 @@ public class LinkedListMain {
         System.out.println("POP Method");
         Integer poppedData = linkedList3.pop();
         System.out.println("Popped Data : " + poppedData);
+
+        System.out.println("**************");
+        System.out.println("POP Last Method");
+        Integer poppedData2 = linkedList3.popLast();
+        System.out.println("Popped Data1 : " + poppedData2);
     }
 }
 

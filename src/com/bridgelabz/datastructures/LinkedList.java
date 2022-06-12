@@ -26,7 +26,11 @@ public class LinkedList<K> {
             tail = newNode;
         }
     }
-
+    public void insertBtw(K key) {
+        Node<K> newNode = new Node<>(key);
+        head.next = newNode;
+        newNode.next = tail;
+    }
     public void print() {
         Node<K> temp = head;
         while(temp != null){

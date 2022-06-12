@@ -18,6 +18,18 @@ public class LinkedListMain {
         linkedList2.add(70);
         linkedList2.print();
         System.out.println();
+
+        System.out.println("**************");
+        LinkedList<Integer> linkedList3 = new LinkedList<>();
+        System.out.println("Insert Between Method");
+        linkedList3.add(56);
+        linkedList3.add(70);
+        linkedList3.print();
+        System.out.println();
+        linkedList3.insertBtw(30);
+        System.out.println("After Insert");
+        linkedList3.print();
+        System.out.println();
     }
 }
 

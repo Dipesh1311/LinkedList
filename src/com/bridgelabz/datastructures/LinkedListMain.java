@@ -19,7 +19,7 @@ public class LinkedListMain {
         linkedList2.print();
         System.out.println();
 
-        System.out.println("**************");
+        System.out.println("*********************");
         LinkedList<Integer> linkedList3 = new LinkedList<>();
         System.out.println("Insert Between Method");
         linkedList3.add(56);
@@ -36,10 +36,19 @@ public class LinkedListMain {
         Integer poppedData = linkedList3.pop();
         System.out.println("Popped Data : " + poppedData);
 
-        System.out.println("**************");
+        System.out.println("****************");
         System.out.println("POP Last Method");
         Integer poppedData2 = linkedList3.popLast();
         System.out.println("Popped Data1 : " + poppedData2);
+
+        System.out.println("**************");
+        System.out.println("Search Method");
+        Node<Integer> searchedNode = linkedList2.search(30);
+        if(searchedNode == null){
+            System.out.println("Data not found");
+        }else{
+            System.out.println("Data Found ");
+        }
     }
 }
 

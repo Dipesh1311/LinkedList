@@ -48,6 +48,18 @@ public class LinkedList<K> {
         tail = secondLastNode;
         return poppedData;
     }
+    public Node<K> search(K key) {
+        Node<K> temp = head;
+        Node<K> searchedNode = null;
+        while (temp != null) {
+            if(temp.key.equals(key)) {
+                searchedNode = temp;
+                break;
+            }
+            temp = temp.next;
+        }
+        return searchedNode;
+    }
     public void print() {
         Node<K> temp = head;
         while(temp != null){

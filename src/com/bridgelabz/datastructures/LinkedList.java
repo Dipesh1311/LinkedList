@@ -78,6 +78,15 @@ public class LinkedList<K> {
             temp = temp.next;
         }
     }
+    public int size() {
+        int i = 0;
+        Node<K> temp = head;
+        while (temp != null) {
+            i++;
+            temp = temp.next;
+        }
+        return i;
+    }
 
     public void print() {
         Node<K> temp = head;

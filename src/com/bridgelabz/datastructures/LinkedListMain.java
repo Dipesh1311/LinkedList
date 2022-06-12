@@ -61,6 +61,8 @@ public class LinkedListMain {
         linkedList2.searchDelete(40);
         linkedList2.print();
         System.out.println();
+        Integer linkedListSize = linkedList2.size();
+        System.out.println("Linked List Size :"+linkedListSize);
 
     }
 }

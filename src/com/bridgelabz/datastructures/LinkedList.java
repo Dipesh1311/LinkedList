@@ -66,6 +66,19 @@ public class LinkedList<K> {
         newNode.next = searchedNode.next;
         searchedNode.next = newNode;
     }
+    public void searchDelete(K key) {
+        Node<K> temp = head;
+        Node<K> previousNode = null;
+        while (temp != null) {
+            if(temp.key.equals(key)) {
+                previousNode.next = temp.next;
+                break;
+            }
+            previousNode = temp;
+            temp = temp.next;
+        }
+    }
+
     public void print() {
         Node<K> temp = head;
         while(temp != null){

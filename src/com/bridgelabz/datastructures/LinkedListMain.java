@@ -52,7 +52,13 @@ public class LinkedListMain {
 
         System.out.println("**********************");
         System.out.println("Search & Insert Method");
-        linkedList2.insertAfter(100,30);
+        linkedList2.insertAfter(40,30);
+        linkedList2.print();
+        System.out.println();
+
+        System.out.println("**********************");
+        System.out.println("Search & delete Method");
+        linkedList2.searchDelete(40);
         linkedList2.print();
         System.out.println();
 

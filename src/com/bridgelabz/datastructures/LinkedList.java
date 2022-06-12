@@ -31,6 +31,11 @@ public class LinkedList<K> {
         head.next = newNode;
         newNode.next = tail;
     }
+    public K pop() {
+        K poppedData = head.key;
+        head = head.next;
+        return poppedData;
+    }
     public void print() {
         Node<K> temp = head;
         while(temp != null){

@@ -30,6 +30,11 @@ public class LinkedListMain {
         System.out.println("After Insert");
         linkedList3.print();
         System.out.println();
+
+        System.out.println("**************");
+        System.out.println("POP Method");
+        Integer poppedData = linkedList3.pop();
+        System.out.println("Popped Data : " + poppedData);
     }
 }
 
